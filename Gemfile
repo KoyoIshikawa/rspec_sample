@@ -31,6 +31,17 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+    # ***** 以下を追加 *****
+  # Rails用のテストフレームワーク
+  gem 'rspec-rails'
+  # モデルに関するテストデータ作成用
+  gem 'factory_bot_rails'
+  # ダミーデータの生成
+  gem 'faker'
+  # デバッグ用
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  # ***** 以上を追加 *****
 end
 
 group :development do
