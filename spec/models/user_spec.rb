@@ -4,6 +4,8 @@ RSpec.describe User, type: :model do
   describe "バリデーション" do
     context "データが条件を満たすとき" do
       it "保存できる" do
+        user = User.new(name: "佐藤", age: 27, email: "satou@example.com")
+        expect(user.valid?).to eq true
       end
     end
     context "name が空のとき" do
